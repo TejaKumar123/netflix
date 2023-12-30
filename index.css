@@ -1,0 +1,111 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+:root{
+	--border:1px solid white;
+}
+@font-face{
+	font-family:netflix1;
+	src:url("fonts/NetflixSans_W_Blk.woff2");
+}
+@font-face{
+	font-family:netflix2;
+	src:url("fonts/NetflixSans_W_Rg.woff2");
+}
+@font-face{
+	font-family:netflix3;
+	src:url("fonts/NetflixSans_W_Md.woff2");
+}
+@font-face{
+	font-family:netflix4;
+	src:url("fonts/NetflixSans_W_Bd.woff2");
+}
+body,html{width:100%;height:100%;margin:0px;}
+#p1{position:relative;width:100%;height:max(100%,660px);border:1px solid black;background-image:url("images/a.jpg");background-size:cover;background-repeat:no-repeat;background-position:;box-shadow:inset 0px -50px 160px black;overflow:hidden;}
+#p1 #backg{width:100%;height:100%;position:absolute;top:0px;left:0px;bottom:0px;backdrop-filter:brightness(40%);}
+#p1 #body1{width:79%;height:80px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:space-between;z-index:2;background-color:rgba(0,0,0,0.3);box-shadow:0px 20px 160px black;margin:auto;user-select:none;}
+#p1 #body1 img{height:105px;user-select:none;}
+#p1 #body1 > div{width:215px;height:50px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-right:20px;}
+#p1 #body1 > div select{;background:transparent;border-radius:5px;border:1px/2 solid white;color:white;padding:3px 15px;font-weight:500;backdrop-filter:brightness(100%);box-sizing:none;font-size:120%}
+#p1 #body1 > div select:focus{outline:2px solid white;outline-offset:1.5px;;}
+#p1 #body1 > div select option{color:black;font-weight:500;font-size:85%;}
+#p1 #body1 > div button{background-color:#e50914;border:none;outline:none;border-radius:4px;color:white;font-size:90%;font-weight:550;padding:7px 13px;cursor:pointer;transition:0.1s;}
+#p1 #body1 > div button:hover{background-color:#c30914;}
+#p1 #body2{width:70%;min-height:300px;margin:auto;border:none;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;margin-top:13%;}
+#p1 #body2 h1{color:white;text-align:center;font-size:40px;font-weight:;font-family:netflix1;}
+#p1 #body2 > p[id="i1"]{color:white;margin-top:12px;font-family:netflix2;font-size:150%;font-weight:510;}
+#p1 #body2 > p[id="i2"]{color:white;margin-top:20px;font-family:netflix2;font-size:125%;}
+#p1 #body2 #search{width:585px;height:55px;border:none;margin-top:20px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;}
+#p1 #body2 #search #search1{width:370px;height:100%;background-color:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.5);border-radius:5px;position:relative;outline:;outline-offset:2px;}
+#p1 #body2 #search #search1 span{position:absolute;top:50%;transform:translateY(-50%);left:14px;color:white;pointer-events:none;opacity:60%;font-family:netflix2;font-size:110%;transition:0.2s;user-select:none;}
+#p1 #body2 #search #search1 input{background:transparent;outline:none;border:none;color:white;font-family:netflix2;font-size:105%;width:100%;height:100%;padding:23px 14px 5px 14px;}
+#p1 #body2 #search #search1 input:focus{outline:0px solid black;border:none;}
+/*#p1 #body2 #search #search1:focus{outline:2px solid white;outline-offset:2px;}*/
+#p1 #body2 #search button{width:205px;height:100%;background-color:#e50914;color:white;outline:none;border:none;border-radius:5px;transition:0.1s;font-size:150%;font-family:netflix3;font-weigh:500;letter-spacin:1px;user-select:none;cursor:pointer;}
+#p1 #body2 #search button span{transform:translateY(4px);font-weight:500;}
+#p1 #body2 #search button:hover{background-color:#c30914;}
+#p1 #body2 #notify{display:none;color:red;margin-left:-460px;margin-top:0px;font-family:netflix2;font-size:88%;}
+
+#p2{width:100%;min-height:520px;background-color:black;display:flex;flex-direction:row;align-items:center;justify-content:space-around;overflow:hidden;}
+#p2 #body1{width:100%;height:400px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:center;}
+#p2 #body1 #text{border:none;width:35%;height:200px;margin-right:20px;}
+#p2 #body1 #text h1{color:white;font-size:300%;font-family:netflix1;}
+#p2 #body1 #text p{color:white;font-size:150%;font-family:netflix2;}
+#p2 #body1 #vid{border:none;width:40%;height:100%;position:relative;}
+#p2 #body1 #vid img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;z-index:3;}
+#p2 #body1 #vid video{position:absolute;top:48%;left:50%;transform:translate(-50%,-50%);width:370px;height:290px;z-index:1;}
+
+#p3{width:100%;min-height:520px;background-color:black;display:flex;flex-direction:row;align-items:center;justify-content:space-around;overflow:hidden;}
+#p3 #body1{width:100%;height:400px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:center;}
+#p3 #vid{border:none;width:40%;position:relative;height:100%;}
+#p3 #vid > img{position:absolute;border:none;width:95%;left:50%;top:50%;transform:translate(-50%,-50%);}
+#p3 #vid #download{position:absolute;width:280px;height:105px;left:50%;top:65%;transform:translateX(-50%);z-index:10;display:flex;flex-direction:row;align-items:center;justify-content:space-around;border:2px solid rgba(255,255,255,0.3);background-color:black;border-radius:10px;}
+#p3 #vid #download img{width:55px;}
+#p3 #vid #download #innertext p:first-child{color:white;font-family:netflix3;}
+#p3 #vid #download #innertext p:nth-child(2){color:#0067d7;font-family:netflix2;margin-top:5px;font-weight:;font-size:80%;}
+#p3 #text{border:none;width:40%;min-height:200px;}
+#p3 #text h1{color:white;font-family:netflix1;font-size:300%;}
+#p3 #text p{color:white;font-family:netflix2;font-size:150%;}
+
+#p4{width:100%;min-height:520px;background-color:black;display:flex;flex-direction:row;align-items:center;justify-content:space-around;overflow:hidden;}
+#p4 #body1{width:100%;height:400px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:center;}
+#p4 #body1 #text{border:none;width:35%;height:200px;margin-right:20px;}
+#p4 #body1 #text h1{color:white;font-size:300%;font-family:netflix1;}
+#p4 #body1 #text p{color:white;font-size:150%;font-family:netflix2;}
+#p4 #body1 #vid{border:none;width:40%;height:100%;position:relative;}
+#p4 #body1 #vid img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;z-index:3;}
+#p4 #body1 #vid video{position:absolute;top:34%;left:50%;transform:translate(-50%,-50%);width:310px;height:270px;z-index:1;}
+
+#p5{width:100%;min-height:520px;background-color:black;display:flex;flex-direction:row;align-items:center;justify-content:space-around;overflow:hidden;}
+#p5 #body1{width:100%;height:400px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:center;}
+#p5 #body1 #vid{border:none;width:40%;height:100%;position:relative;}
+#p5 #body1 #vid img{border:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:97%;}
+#p5 #body1 #text{border:none;width:37%;min-height:250px;}
+#p5 #body1 #text h1{color:white;font-family:netflix1;font-size:290%;}
+#p5 #body1 #text p{color:white;font-family:netflix2;font-size:150%;}
+
+#p6{width:100%;min-height:800px;background-color:black;}
+
+#p7{width:100%;min-height:390px;background-color:black;display:flex;align-items:center;justify-content:center;}
+#p7 #body1{border:none;width:75%;min-height:300px;}
+#p7 #body1 #body2{border:none;width:100%;height:50px;position:relative;}
+#p7 #body1 #body2 p{position:absolute;top:50%;transform:translateY(-50%);left:0px;font-size:100%;font-family:netflix2;color:rgba(255,255,255,0.7);}
+#p7 #body1 #body2 a{color:rgba(255,255,255,0.7);font-size:110%;}
+#p7 #body1 #body4{display:none;}
+#p7 #body1 #body3{border:none;width:95%;min-height:260px;position:relative;display:flex;flex-direction:row;align-items:center;justify-content:space-between;}
+#p7 #body1 #body3 > div{border:none;width:200px;height:250px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;}
+#p7 #body1 #body3 > div a{font-size:88%;color:rgba(255,255,255,0.7);margin-bottom:12px;margin-top:3px;font-family:netflix2;font-weight:200;}
+#p7 #body1 #body3 > div:first-child select{background-color:#0f0f0f;border-radius:5px;color:white;border:1px solid rgba(255,255,255,0.2);padding:3px 15px;font-size:110%;margin-top:15px;user-select:none;}
+#p7 #body1 #body3 > div:first-child select:focus{outline:2px solid white;outline-offset:2px;}
+#p7 #body1 #body3 > div:first-child select option{color:black;background-color:white;font-size:90%;}
+#p7 #body1 #body3 > div:first-child p{color:rgba(255,255,255,0.7);font-size:88%;margin-top:25px;font-family:netflix2;}
+
+
+
+
+
+
+
+
