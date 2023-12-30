@@ -1,3 +1,3 @@
 # netflix
 
-website link: https://tejanetflix.netlify.app
+website link: https://tejanetflix.netlify.app/
