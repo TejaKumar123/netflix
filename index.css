@@ -86,7 +86,29 @@ body,html{width:100%;height:100%;margin:0px;}
 #p5 #body1 #text h1{color:white;font-family:netflix1;font-size:290%;}
 #p5 #body1 #text p{color:white;font-family:netflix2;font-size:150%;}
 
-#p6{width:100%;min-height:800px;background-color:black;}
+#p6{width:100%;min-height:800px;background-color:black;overflow-x:hidden;padding-top:65px;padding-bottom:65px;}
+#p6 > h1{color:white;font-size:300%;font-family:netflix1;text-align:center;}
+#p6 #body1{border:none;width:76%;min-height:500px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:8px;color:white;font-family:netflix2;margin:auto;margin-top:30px;}
+#p6 #body1 > div{border:none;background-color:#2d2d2d;width:100%;}
+#p6 #body1 > div > div:first-child{width:100%;height:85px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;cursor:pointer;user-select:none;transition:0.3s;}
+#p6 #body1 > div > div:first-child:hover{filter:brightness(150%);background-color:rgba(255,255,255,0.1);}
+#p6 #body1 > div > div:first-child p{margin-left:25px;font-size:150%;}
+#p6 #body1 > div > div:first-child span{margin-right:25px;transform:scale(2,2);}
+#p6 #body1 > div > div:nth-child(3){width:100%;min-height:50px;padding-right:25px;padding-left:25px;padding-bottom:25px;display:none;overflow:hidden;}
+#p6 #body1 > div > div:nth-child(3) p{font-size:150%;}
+#p6 #body1 > div > div:nth-child(3) p:first-child{margin-top:20px;}
+#p6 #body1 > div > div:nth-child(3) p:nth-child(2){margin-top:30px;}
+#p6 > p{color:white;margin-top:45px;font-family:netflix2;font-size:125%;text-align:center;}
+#p6 #search{width:585px;height:55px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin:auto;margin-top:20px;position:relative;}
+#p6 #search #search1{width:370px;height:100%;background-color:#0f0f0f;border:1px solid rgba(255,255,255,0.5);border-radius:5px;position:relative;outline:;outline-offset:2px;}
+#p6 #search #search1 span{position:absolute;top:50%;transform:translateY(-50%);left:14px;color:white;pointer-events:none;opacity:80%;font-family:netflix2;font-size:110%;transition:0.2s;user-select:none;}
+#p6 #search #search1 input{background:transparent;outline:none;border:none;color:white;font-family:netflix2;font-size:105%;width:100%;height:100%;padding:23px 14px 5px 14px;}
+#p6 #search #search1 input:focus{outline:0px solid black;border:none;}
+/*#p1 #body2 #search #search1:focus{outline:2px solid white;outline-offset:2px;}*/
+#p6 #search button{width:205px;height:100%;background-color:#e50914;color:white;outline:none;border:none;border-radius:5px;transition:0.1s;font-size:150%;font-family:netflix3;font-weigh:500;letter-spacin:1px;user-select:none;cursor:pointer;}
+#p6 #search button span{transform:translateY(4px);font-weight:500;}
+#p6 #search button:hover{background-color:#c30914;}
+#p6 #search #notify1{color:red;font-family:netflix2;font-size:88%;position:absolute;top:60px;display:none;}
 
 #p7{width:100%;min-height:390px;background-color:black;display:flex;align-items:center;justify-content:center;}
 #p7 #body1{border:none;width:75%;min-height:300px;}
