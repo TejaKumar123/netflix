@@ -1,0 +1,85 @@
+*{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+}
+
+@font-face{
+	font-family:netflix1;
+	src:url("fonts/NetflixSans_W_Blk.woff2");
+}
+@font-face{
+	font-family:netflix2;
+	src:url("fonts/NetflixSans_W_Rg.woff2");
+}
+@font-face{
+	font-family:netflix3;
+	src:url("fonts/NetflixSans_W_Md.woff2");
+}
+@font-face{
+	font-family:netflix4;
+	src:url("fonts/NetflixSans_W_Bd.woff2");
+}
+
+body,html{width:100%;overflow-x:hidden;}
+#p1{width:100%;min-height:150%;background-image:url("images/a.jpg");background-repeat:no-repeat;background-size:cover;position:relative;}
+#p1 #body1{border:none;width:100%;height:auto;backdrop-filter:brightness(45%);position:;}
+
+#p1 #body1 #icondiv{border:none;width:80%;min-height:50px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;margin:auto;}
+#p1 #body1 #icondiv img{height:80px;}
+
+#p1 #body1 #formdiv{border:none;margin:auto;width:450px;height:710px;background-color:rgba(0,0,0,0.7);padding:68px;padding-top:50px;margin-top:10px;}
+#p1 #body1 #formdiv #formid{border:none;width:100%;min-height:200px;}
+#p1 #body1 #formdiv #formid > p{color:white;font-size:200%;font-family:netflix3;font-weight:300;}
+#p1 #body1 #formdiv #formid #fieldsdiv{width:100%;border:none;height:auto;display:flex;flex-direction:column;align-items:center;justify-content:space-between;margin-top:28px;}
+#p1 #body1 #formdiv #formid #fieldsdiv > div{border:none;border-radius:5px;width:100%;height:56px;position:relative;background-color:rgba(23,22,22,0.7);outline:none;outline-offset:2px;}
+#p1 #body1 #formdiv #formid #fieldsdiv > div:nth-child(3){margin-top:17px;}
+#p1 #body1 #formdiv #formid #fieldsdiv > p{color:#eb3942;align-self:flex-start;margin-top:3px;font-family:netflix2;font-size:85%;display:none;}
+#p1 #body1 #formdiv #formid #fieldsdiv > div > span:first-child{font-size:100%;pointer-events:none;position:absolute;top:50%;transform:translateY(-50%);left:15px;transition:0.2s;color:white;opacity:70%;font-family:netflix2;pointer-events:none;user-select:none;}
+/*#p1 #body1 #formdiv #formid #fieldsdiv > div > span:nth-child(2){position:absolute;color:#e87c03;left:5px;top:55px;font-size:80%;font-family:netflix2;display:none;}*/
+#p1 #body1 #formdiv #formid #fieldsdiv #emaildiv{border:1px solid rgba(255,255,255,0.3);}
+#p1 #body1 #formdiv #formid #fieldsdiv #emaildiv > input{position:absolute;width:100%;height:100%;background:transparent;color:white;border:none;outline:none;font-size:110%;padding-top:20px;padding-left:15px;}
+#p1 #body1 #formdiv #formid #fieldsdiv #passwdiv{border:1px solid rgba(255,255,255,0.3);}
+#p1 #body1 #formdiv #formid #fieldsdiv #passwdiv > input{position:absolute;width:98%;height:100%;background:transparent;color:white;border:none;outline:none;font-size:110%;padding-top:20px;padding-left:15px;padding-right:40px;left:0px;}
+#p1 #body1 #formdiv #formid #fieldsdiv #passwdiv > span:nth-child(3){position:absolute;top:50%;transform:translateY(-50%);right:8px;color:white;font-size:110%;border:none;border-radius:50%;padding:7px;user-select:none;background-color:none;padding-top:9px;transition:background-color 0.2s;visibility:hidden;}
+#p1 #body1 #formdiv #formid #fieldsdiv #passwdiv > span:nth-child(3):hover{background-color:#33333380;}
+#p1 #body1 #formdiv #formid > input[type="submit"]{width:100%;height:40px;border-radius:3px;color:white;background-color:#e50914;text-align:center;margin-top:15px;border:none;outline:none;font-size:105%;font-family:netflix3;font-weight:400;transition:0.2s;}
+#p1 #body1 #formdiv #formid > input[type="submit"]:hover{background-color:#c50914;}
+#p1 #body1 #formdiv #forgot{width:100%;height:50px;display:flex;align-items:center;justify-content:center;}
+#p1 #body1 #formdiv #forgot > li{font-family:netflix2;color:white;font-size:100%;text-decoration:none;text-align:center;list-style-type:none;cursor:pointer;display:inline;}
+#p1 #body1 #formdiv #forgot > li:hover{text-decoration:underline;opacity:0.7;}
+#p1 #body1 #formdiv #remember{border:none;width:100%;min-height:100px;margin-top:105px;}
+
+			/* styling the checkbox */
+#p1 #body1 #formdiv #remember > input[type="checkbox"]{appearance:none;border:1px solid white;width:18px;height:18px;transform:translateY(3px);border-radius:2px;opacity:40%;transition:0.15s;position:relative;}
+/*#p1 #body1 #formdiv #remember > input[type="checkbox"]:hover{opacity:70%;}*/
+#p1 #body1 #formdiv #remember > input[type="checkbox"]::before{position:absolute;width:100%;height:100%;text-align:left;content:"";color:black;transform:translate(-21%,-20%);user-select:none;}
+#p1 #body1 #formdiv #remember > input[type="checkbox"]:checked{background-color:white;opacity:1;}
+#p1 #body1 #formdiv #remember > input[type="checkbox"]:checked::before{content:url('icons/c.svg');}
+			/* styling the checkbox end */
+
+#p1 #body1 #formdiv #remember > label{color:white;font-size:105%;font-family:netflix2;margin-left:7px;user-select:none;}
+#p1 #body1 #formdiv #remember p:nth-child(3){color:white;font-size:105%;margin-top:20px;}
+#p1 #body1 #formdiv #remember p:nth-child(3) > span{opacity:70%;font-family:netflix2;}
+#p1 #body1 #formdiv #remember p:nth-child(3) > a{text-decoration:none;font-family:netflix3;color:white;}
+#p1 #body1 #formdiv #remember p:nth-child(3) > a:hover{text-decoration:underline;}
+#p1 #body1 #formdiv #remember p:nth-child(4){font-size:85%;margin-top:15px;font-family:netflix2;line-height:1;font-weight:300;}
+#p1 #body1 #formdiv #remember p:nth-child(4) > span{opacity:50%;color:white;}
+#p1 #body1 #formdiv #remember p:nth-child(4) > a{color:#006dbe;text-decoration:none;}
+#p1 #body1 #formdiv #remember p:nth-child(4) > a:hover{text-decoration:underline;}
+
+
+#p1 #body1 #footer{border:none;width:100%;min-height:300px;margin-top:50px;background-color:rgba(0,0,0,0.7);display:flex;align-items:flex-start;justify-content:center;}
+#p1 #body1 #footer #f1{border:none;width:77%;min-height:170px;margin-top:50px;}
+#p1 #body1 #footer #f1 #head1{border:none;width:100%;height:50px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;}
+#p1 #body1 #footer #f1 #head1 > a{color:rgba(255,255,255,0.7);font-family:netflix2;font-size:105%;}
+#p1 #body1 #footer #f1 #foot1{border:none;width:100%;min-height:150px;display:flex;flex-direction:row;align-items:flex-start;justify-content:space-between;}
+#p1 #body1 #footer #f1 #foot1 > div{border:none;width:240px;min-height:100px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;}
+#p1 #body1 #footer #f1 #foot1 > div > a{color:rgba(255,255,255,0.7);font-family:netflix2;font-size:88%;margin-bottom:14px;margin-top:7px;font-weight:200;}
+#p1 #body1 #footer #f1 #foot1 > div:first-child > select{background-color:#0f0f0f;border-radius:5px;color:white;border:1px solid rgba(255,255,255,0.2);padding:3px 15px;font-size:110%;margin-top:15px;user-select:none;outline-offset:2px;}
+#p1 #body1 #footer #f1 #foot1 > div:first-child > select option{color:black;background-color:white;font-size:90%;}
+#p1 #body1 #footer #f1 #foot1 > div:first-child > select:focus{outline:2px solid white;}
+
+#p1 #body1 #footer #f1 #foot2{display:none;}
+
+

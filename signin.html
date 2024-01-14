@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Netflix</title>
+		<link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2023.ico">
+		<link rel="stylesheet" href="signin.css" media="screen and (min-width:750px)">
+		<link rel="stylesheet" href="signin1.css" media="screen and (max-width:749px)">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<script src="signin.js"></script>
+	</head>
+	<body>
+		<div id="p1">
+			<div id="body1">
+			
+				<div id="icondiv">
+					<img src="images/j.png" alt="Netflix" />
+				</div>
+				
+				<div id="formdiv">
+					<form action="#" method="post" id="formid">
+						<p>Sign In</p>
+						<div id="fieldsdiv">
+							<div id="emaildiv">
+								<span>Email or phone number</span>
+								<input type="text" maxlength="50" onclick="input_enter(event,'notify',1)" onblur="input_enter(event,'notify',0)" value="">
+							</div>
+							<p id="notify"><span class="material-symbols-outlined" style="font-size:138%;transform:translateY(5px);">cancel</span> Please enter a valid email address or phone number.</p>
+							<div id="passwdiv">
+								<span>Password</span>
+								<input type="password" maxlength="60" onclick="input_enter(event,'notify1',1)" onblur="input_enter(event,'notify1',0)" onfocus="this.click()" value="">
+								<span class="material-symbols-outlined" onclick="visible(event)">visibility</span>
+							</div>
+							<p id="notify1"><span class="material-symbols-outlined" style="font-size:138%;transform:translateY(5px);">cancel</span> Your password must contain between 4 and 60 characters.</p>
+						</div>
+						<input type="submit" value="Sign In">
+					</form>
+					<div id="forgot">
+						<li>Forgot password?</li>
+					</div>
+					<div id="remember">
+						<input type="checkbox" id="checkb" onmouseover="remember_over(1)" onmouseout="remember_over(0)">
+						<label for="checkb" onmouseover="remember_over(1)" onmouseout="remember_over(0)"> Remember me</label>
+						<p><span>New to Netflix? </span><a href="index.html">Sign up now.</a></p>
+						<p><span>This page is protected by Google reCAPTCHA to ensure you're not a bot.</span> <a href="#">Learn more.</a></p>
+					</div>
+				</div>
+				<div id="footer">
+					<div id="f1">
+						<div id="head1">
+							<a>Questions? Call 000-800-919-1694</a>
+						</div>
+						<div id="foot1">
+							<div>
+								<a href="#">FAQ</a>
+								<a href="#">Cookie Preferences</a>
+								<select>
+									<option checked>English</option>
+									<option>Hindi</option>
+								</select>
+							</div>
+							<div>
+								<a href="#">Help Centre</a>
+								<a href="#">Corporate Information</a>
+							</div>
+							<div>
+								<a href="#">Terms of Use</a>
+							</div>
+							<div>
+								<a href="#">Privacy</a>
+							</div>
+						</div>
+						<div id="foot2">
+							<div>
+								<a href="#">FAQ</a>
+								<a href="#">Terms of Use</a>
+								<a href="#">Cookie Preferences</a>
+								<select>
+									<option checked>English</option>
+									<option>Hindi</option>
+								</select>
+							</div>
+							<div>
+								<a href="#">Help Centre</a>
+								<a href="#">Privacy</a>
+								<a href="#">Corporate Information</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</body>
+</html>
